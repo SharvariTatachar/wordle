@@ -1,0 +1,97 @@
+*{
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+    border: 2px white;
+    text-align: center;
+    padding: 18px;
+}
+
+#container{
+    background-color: black; 
+    align-items: center; 
+    height: 100; 
+    flex-direction: column;
+}
+
+.title{
+    color: white; 
+    font-size: 2.5rem; 
+    font-weight: bold; 
+    margin: 0.4rem 0 0.4rem 0; 
+    text-align: center;
+    align-items: center;
+
+}
+
+#wordle-container{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-grow: 1; 
+    overflow: hidden; 
+}
+
+#board{
+    display: grid; 
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.square{
+    border: 2px solid darkgray; 
+    background-color: black;
+    min-width: 60px; 
+    min-height: 60px; 
+    font-size: 45px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    color:white; 
+    
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+    
+    animation-duration: 6s; 
+}
+
+#keyboard-container{
+    height: 200px;
+}
+
+.keyboard-row{
+    display:flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin: 0 auto 8px; 
+    touch-action: manipulation;
+}
+
+.keyboard-row button{
+    font-family: inherit;
+    font-weight: bold; 
+    border: 0; 
+    padding: 0; 
+    height: 58px; 
+    cursor: pointer; 
+    background-color: darkgray; 
+    color: white; 
+    flex-grow: 1; 
+    text-transform: uppercase;
+    margin-right: 6px;  
+    margin-left: 6px; 
+    border-radius: 4px; 
+    user-select: none;
+}
+
+.keyboard-row button.wide-button{
+    flex-grow: 1.5; 
+}
+
+.spacer-half{
+    flex-grow: 0.5;
+}
